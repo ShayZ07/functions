@@ -1,27 +1,22 @@
 #include<stdio.h>
 
-int fact(int n);
+// No-return type without arguement:
+
+
+void swap();
 
 int main(){
-int n;
-printf("Enter your number: ");
-scanf("%d", &n);
-	if(n < 0){
-		printf("INVALID NUMBER.");
-	}
-	else if(n == 0){
-		printf("The factorial of 0 is 1.");
-	}
-	else{
-		printf("The factorial of your number is: %d", fact(n));
-	}
+swap();
 return 0;
 }
 
-int fact(int n){
-int facto = 1, i;
-	for(i=n; i>=1; i--){
-		facto = facto * i;
-	}
-return facto;
+void swap(){
+int a, b, temp;
+printf("Enter the values of 'a' and 'b': ");
+scanf("%d%d", &a, &b);
+
+temp = a;
+a = b;
+b = temp;
+printf("a = %d, b = %d", a, b);
 }
