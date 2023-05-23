@@ -1,7 +1,6 @@
 #include<stdio.h>
 
 int main(){
-printf("This is a version branch.");
-printf("This is a feature branch as well.");
+printf("This is feature 2.");
 return 0;
 }
